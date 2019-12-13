@@ -53,6 +53,32 @@
     .sticky {
         position:sticky;
     }
+      
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  background-color: white;
+  
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 75%;
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
     </style>
   </head>
@@ -73,6 +99,17 @@
                 
       <br>
       <br>
+         <div class="row">
+         <div class="column side">
+            <h2>MORE...</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+          </div>
+
+          <div class="column middle">
+            <h2>Main Content</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+          </div>
                 
         <div align="center">
            <a href="diary.html"><img src="imageedit_23_5185319217.png" width=500px></a>
