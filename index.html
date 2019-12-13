@@ -4,7 +4,7 @@
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Amiri|Archivo+Black|Bebas+Neue|Overpass|Prata&display=swap" rel="stylesheet">
     <link href="https://www.filehosting.org/file/details/837679/Harmony.woff"
     <style>
-     .h2 {
+     h2 {
        font-family: 'Prata', cursive;
        font-size: 35pt;
        letter-spacing:5px;
@@ -55,15 +55,18 @@
         position:sticky;
     }
       
-    h1 {
-font-family: 'Harmony Regular';
-font-style: normal;
-font-weight: lighter;
+    @font-face {
+       font-family: 'Harmony Regular';
+       font-style: normal;
+       font-weight: lighter;
        font-size: 43pt;
        letter-spacing:5px;
        line-height:24px;
-src: url('Harmony.woff') format('woff');
+       src: url(path/Harmony.woff) format('woff');
 }
+    .useharmony {
+    font-face: 'Harmony Regular';
+    }
       
 /* Create three unequal columns that floats next to each other */
 .column {
