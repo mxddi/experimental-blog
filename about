@@ -1,1 +1,191 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Prata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courier+Prime&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500&display=swap" rel="stylesheet">
 
+    <style>
+      
+      .parentcolumn {
+        text-align:center;
+      }
+      
+      #navi {
+        font-family: 'Work Sans', sans-serif;
+        font-weight:300;
+      }
+      
+      h1 {
+        font-family:"Harmony Regular";
+        letter-spacing:2px;
+        font-size:135pt;
+        line-height:1px;
+        font-weight:lighter;
+      }
+     h2 {
+       /*font-family: 'Prata', cursive; */
+       font-family: 'Work Sans', sans-serif;
+       font-size: 20pt;
+       letter-spacing:5px;
+       font-weight: bold;
+       line-height:21px;
+        } 
+       h3 {
+        font-family: 'Work Sans', monospace;
+        font-size; 8pt;
+        font-weight: lighter;
+        line-height: 2px;
+      }
+      h4 {
+        font-family: 'Work Sans', sans-serif;
+        font-size; 13pt;
+        font-weight: lighter;
+        line-height: 2px;
+      }
+      
+      h5 { 
+      font-family: 'Work Sans', sans-serif;
+        font-size; 13pt;
+        font-weight: 400;
+        line-height: 2px;
+      }
+     
+    /* Style the header */
+    .header {
+      background-color: white;
+      padding:0px;
+      border: 1px solid white;
+      text-align: center;
+    }
+    /* Style the top navigation bar */
+    .topnav {
+      overflow: hidden;
+      background-color: white;
+      position: sticky;
+      display:block;
+      margin-top: 0px;
+      top:0;
+      position:sticky;
+    }
+
+    /* Style the topnav links */
+    .topnav a {
+      float: center;
+      display: inline;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size:19;
+      color:#5e5e5e;
+    }
+
+    /* Change color on hover */
+    .topnav a:hover {
+      border-bottom:8px solid #f2dfe9;
+      /*background-color: #faf7f9;
+      /*background-color: #ddd;
+      color: black;*/
+    }
+      
+    @font-face {
+       font-family: 'Harmony Regular';
+       font-style: normal;
+       font-weight: lighter;
+       font-size: 120pt;
+       letter-spacing:5px;
+       padding:0px;
+       line-height:24px;
+       src: local('Harmony Regular'), url('Harmony.woff') format('woff');
+      }
+      
+      .sidebar {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 15pt;
+        font-weight: 300;
+        line-height: 2px;
+        letter-spacing:3px;
+      }
+      
+/* Create three unequal columns that floats next to each other */
+.column {
+  padding: 20px;
+  background-color: white;
+  display:inline-block;
+  float:left;
+  border: 3px solid #F9E5ED; 
+  
+}
+
+/* Left and right column */
+.column.side {
+  width: 17%;
+  margin: 7.5px;
+  margin-left: 23px;
+  text-align: center; 
+  top: 0;
+  background-color: #F9E5ED;
+
+
+}
+ .sidecolumnleft {
+  width: 15%;
+   height:300px;
+  float:left;
+  background-color:"F9E5ED";
+  display:inline-block;
+   margin:0px;
+   border: 0px;
+
+}
+
+/* Middle column */
+.column.middle {
+  width: 45%;
+  margin: 7.5px;
+  margin-left:0px;
+  text-align:left;
+  box-shadow: -27px -23px #F9E5ED; 
+  /*box-shadow: -13px -13px #f7f7f7;*/
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+    </style>
+  </head>
+  <body>
+      <title>MADDI</title> 
+            <body bgcolor="white">
+              <div class="header">
+                  <h1 align="center">Madeline Gregory</h1>
+              </div> 
+
+        <div class="topnav" class="sticky" align="center"> <!-- Navigation bar -->
+            <p id="navi"><a href="blog.html">HOME</a> <a href="travel.html">TRAVEL</a><a href="#">THROUGH THE LENS</a><a class="centered" href="#">ABOUT</a>
+          </div>
+                
+      <br>
+      <br>
+      <br>
+    
+    <div class="row">
+     <div class="parentcolumn">
+       <div class="sidecolumnleft"></div>
+         <div class="column middle"> <!-- LATEST POST BELOW-->
+          <div id="aboutme">
+            <img src="IMG_7064.JPG">
+          </div>
+     </div> <!-- closes middle column -->
+      
+      </div>
+    </div>
+
+    
+  </body>
+</html>
