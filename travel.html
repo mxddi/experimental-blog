@@ -1,41 +1,54 @@
 <html>
   <head>
-    
-    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Amiri|Archivo+Black|Bebas+Neue|Overpass|Prata&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Courier+Prime|Libre+Barcode+39+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Prata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courier+Prime&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500&display=swap" rel="stylesheet">
+
     <style>
       
       .parentcolumn {
         text-align:center;
       }
       
+      #navi {
+        font-family: 'Work Sans', sans-serif;
+        font-weight:300;
+      }
+      
       h1 {
         font-family:"Harmony Regular";
+        letter-spacing:2px;
         font-size:135pt;
         line-height:1px;
         font-weight:lighter;
       }
      h2 {
-       font-family: 'Prata', cursive;
-       font-size: 25pt;
+       /*font-family: 'Prata', cursive; */
+       font-family: 'Work Sans', sans-serif;
+       font-size: 20pt;
        letter-spacing:5px;
-       font-weight: lighter;
-       line-height:10px;
+       font-weight: bold;
+       line-height:21px;
         } 
        h3 {
-        font-family: 'Prata', monospace;
+        font-family: 'Work Sans', monospace;
         font-size; 8pt;
         font-weight: lighter;
         line-height: 2px;
       }
       h4 {
-        font-family: 'Courier Prime', monospace;
-        font-size; 10pt;
+        font-family: 'Work Sans', sans-serif;
+        font-size; 13pt;
         font-weight: lighter;
         line-height: 2px;
       }
       
+      h5 { 
+      font-family: 'Work Sans', sans-serif;
+        font-size; 13pt;
+        font-weight: 400;
+        line-height: 2px;
+      }
      
     /* Style the header */
     .header {
@@ -64,12 +77,15 @@
       padding: 14px 16px;
       text-decoration: none;
       font-size:19;
+      color:#5e5e5e;
     }
 
     /* Change color on hover */
     .topnav a:hover {
-      background-color: #ddd;
-      color: black;
+      border-bottom:8px solid #f2dfe9;
+      /*background-color: #faf7f9;
+      /*background-color: #ddd;
+      color: black;*/
     }
       
     @font-face {
@@ -83,40 +99,54 @@
        src: local('Harmony Regular'), url('Harmony.woff') format('woff');
       }
       
+      .sidebar {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 15pt;
+        font-weight: 300;
+        line-height: 2px;
+        letter-spacing:3px;
+      }
+      
 /* Create three unequal columns that floats next to each other */
 .column {
   padding: 20px;
   background-color: white;
   display:inline-block;
   float:left;
-  border: 15px solid #F9E5ED;
+  border: 3px solid #F9E5ED; 
   
 }
 
 /* Left and right column */
 .column.side {
-  width: 20%;
+  width: 17%;
   margin: 7.5px;
+  margin-left: 23px;
   text-align: center; 
   top: 0;
+  background-color: #F9E5ED;
+
 
 }
  .sidecolumnleft {
-  width: 7%;
+  width: 15%;
    height:300px;
   float:left;
   background-color:"F9E5ED";
   display:inline-block;
    margin:0px;
+   border: 0px;
 
 }
 
 /* Middle column */
 .column.middle {
-  width: 60%;
+  width: 45%;
   margin: 7.5px;
   margin-left:0px;
   text-align:left;
+  box-shadow: -27px -23px #F9E5ED; 
+  /*box-shadow: -13px -13px #f7f7f7;*/
   
 }
 
@@ -129,8 +159,6 @@
 
     </style>
   </head>
-  
-  
   <body>
       <title>MADDI</title> 
             <body bgcolor="white">
@@ -139,19 +167,19 @@
               </div> 
 
         <div class="topnav" class="sticky" align="center"> <!-- Navigation bar -->
-            <p><a href="index.html">HOME</a> <a href="travel.html">TRAVEL</a><a href="#">THROUGH THE LENS</a><a class="centered" href="about">ABOUT</a>
+            <p id="navi"><a href="index.html">HOME</a> <a href="travel.html">TRAVEL</a><a href="#">THROUGH THE LENS</a><a class="centered" href="about">ABOUT</a>
           </div>
                 
       <br>
       <br>
-    <br>
+      <br>
     
     <div class="row">
     <div class="parentcolumn">
     <div class="sidecolumnleft"></div>
       
       
-        <div class="column middle"> <!-- LATEST POST BELOW -->
+        <div class="column middle"> <!-- LATEST POST BELOW-->
      <article id="travel">
        <h2>ISLA MUJERES, MEXICO</h2> <!--MEXICO -->
      <h4>December 14th, 2019</h4>
@@ -216,25 +244,27 @@
      <br>
      <br> 
      </article>
+
+
      </div> <!-- closes middle column -->
       
       <div class="column side" align="center"> <!-- side column -->
-        <h3>CURRENT INSPIRATION</h3>
+        <p class="sidebar">INSPIRATION</p>
         <br>
            <iframe src="https://open.spotify.com/embed/playlist/3niq29vz1ioZKZxlwuvtvy" width="250" height="330" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </div> <!-- closes side column -->
-    
-    <br><br><br>
+
+<br><br><br>
 
 
  <div class="column side" align="center"> <!-- side column -->
-        <h3><i>ABOUT ME</i></h3>
+        <h3>ABOUT ME</h3>
         <br>
            <p>UNDER CONSTRUCTION
       </div> <!-- closes side column -->
 
  <div class="column side" align="center"> <!-- side column -->
-        <h3><i>FOLLOW</i></h3>
+        <h3>FOLLOW</h3>
         <br>
            <p>UNDER CONSTRUCTION
       </div> <!-- closes side column -->
@@ -245,5 +275,3 @@
     
   </body>
 </html>
-
-<!--style="background-image: url('14bfb731b9dd3bae441cfcd22e4e2f61.jpg'); background-size: cover">-->
